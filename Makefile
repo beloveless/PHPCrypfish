@@ -29,7 +29,7 @@ NAME				=	phpcrypfish
 #	one for each extension. Use this variable to specify this directory.
 #
 
-INI_DIR				=	/etc/php/7.0/mods-available/
+INI_DIR				=	/etc/php/7.2/mods-available/
 #INI_DIR_CLI			=	/etc/php/7.4/cli/conf.d
 #INI_DIR_APACHE		=	/etc/php/7.4/apache2/conf.d
 
@@ -136,8 +136,8 @@ ${OBJECTS}:
 install:		
 						${CP} ${EXTENSION} ${EXTENSION_DIR}
 						${CP} ${INI} ${INI_DIR}
-						${CP} ${INI} ${INI_DIR_CLI}
-						${CP} ${INI} ${INI_DIR_APACHE}
+#						${CP} ${INI} ${INI_DIR_CLI}
+#						${CP} ${INI} ${INI_DIR_APACHE}
 				
 clean:
 						${RM} ${EXTENSION} ${OBJECTS}
