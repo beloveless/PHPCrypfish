@@ -50,9 +50,8 @@ RUN cd ./phpcrypf-ex \
     && make install \
     && make clean \
     && make \
-    && make install 
-
-RUN phpenmod -v 7.2 phpcrypfish \
+    && make install \
+    && phpenmod -v 7.2 phpcrypfish \
     && php -m \
     && php tes#1.php \
     && php obfus1.php \
