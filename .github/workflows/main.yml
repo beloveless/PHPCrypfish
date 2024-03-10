@@ -26,4 +26,4 @@ jobs:
         run: sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
       - name: stop docker
-        run: docker stop docker-apache
+        run: docker stop phpcrypfish-apache
