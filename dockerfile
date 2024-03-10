@@ -56,7 +56,7 @@ RUN cd ./phpcrypf-ex \
     && php tes#1.php \
     && php obfus1.php \
     && ls \
-    && php tes.php.obfuskasi 
+    && php tes#1.php.obfuskasi 
 
 # Set working directory
 WORKDIR /var/www/html
